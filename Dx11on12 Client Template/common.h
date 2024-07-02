@@ -17,12 +17,8 @@
 
 #include "Utils/MemoryUtils.h"
 
-#include "FileIO.h"
-
 // maths includes
 #include "SDK/Maths/Vector2.h"
-
-#include "Game.h"
 
 #include "Hook/FuncHook.h"
 

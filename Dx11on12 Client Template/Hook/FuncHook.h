@@ -6,14 +6,12 @@ public:
 };
 
 // include hooks here
-#include "Hooks/KeymapHook.h"
 #include "Hooks/DirectX/DirectXHook.h"
 
 void InitHooks() {
 	// initialize hooks here
 	static FuncHook* hooks[] = {
 		// include hooks here
-        &KeymapHook::Get(),
         &DirectXHook::Get()
 	};
 

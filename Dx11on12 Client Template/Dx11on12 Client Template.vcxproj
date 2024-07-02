@@ -162,12 +162,9 @@
     <ClInclude Include="Assets\Font\ProductSans.h" />
     <ClInclude Include="common.h" />
     <ClInclude Include="Console.h" />
-    <ClInclude Include="FileIO.h" />
-    <ClInclude Include="Game.h" />
     <ClInclude Include="Hook\FuncHook.h" />
     <ClInclude Include="Hook\Hooks\DirectX\DeviceType.h" />
     <ClInclude Include="Hook\Hooks\DirectX\DirectXHook.h" />
-    <ClInclude Include="Hook\Hooks\KeymapHook.h" />
     <ClInclude Include="Libs\imgui\imconfig.h" />
     <ClInclude Include="Libs\imgui\imgui.h" />
     <ClInclude Include="Libs\imgui\imgui_impl_dx11.h" />
@@ -186,16 +183,7 @@
     <ClInclude Include="Libs\minhook\hde\table64.h" />
     <ClInclude Include="Libs\minhook\minhook.h" />
     <ClInclude Include="Libs\minhook\trampoline.h" />
-    <ClInclude Include="SDK\Maths\AABB.h" />
-    <ClInclude Include="SDK\Maths\CaretMeasureData.h" />
-    <ClInclude Include="SDK\Maths\Keys.h" />
-    <ClInclude Include="SDK\Maths\Math.h" />
-    <ClInclude Include="SDK\Maths\MCTextFormat.h" />
-    <ClInclude Include="SDK\Maths\TextInput.h" />
-    <ClInclude Include="SDK\Maths\UIColor.h" />
     <ClInclude Include="SDK\Maths\Vector2.h" />
-    <ClInclude Include="SDK\Maths\Vector3.h" />
-    <ClInclude Include="SDK\Maths\Vector4.h" />
     <ClInclude Include="Utils\MemoryUtils.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
