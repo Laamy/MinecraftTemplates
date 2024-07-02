@@ -1,14 +1,8 @@
 #pragma once
 
-// util used to call functions by their void* address
-template <typename R, typename... Args>
-R CallFunc(void* func, Args... args) {
-    return ((R(*)(Args...))func)(args...);
-}
-
 // util used to call functions by their uintptr_t address
 template <typename R, typename... Args>
-R CallFunc(uintptr_t func, Args... args) {
+R CallFunc(void* func, Args... args) {
     return ((R(*)(Args...))func)(args...);
 }
 
@@ -39,26 +33,6 @@ bool HookFunction(void* pTarget, void* pDetour, void* pOriginal) {
     return true;
 
 }
-
-static void* findMultiLvlPtr(uintptr_t baseAddr, std::vector<unsigned int> offsets) {
-
-    uintptr_t addr = baseAddr;
-
-    for (int I = 0; I < offsets.size(); I++)
-    {
-        addr = *(uintptr_t*)(addr);
-
-        if ((uintptr_t*)(addr) == nullptr)
-        {
-            return reinterpret_cast<void*>(addr);
-        }
-
-        addr += offsets[I];
-    };
-
-    return reinterpret_cast<void*>(addr);
-
-};
 
 #define INRANGE(x, a, b) (x >= a && x <= b)
 #define GET_BYTE(x) ((GET_BITS(x[0]) << 4) | GET_BITS(x[1]))
@@ -141,6 +115,9 @@ static uintptr_t findOffset(const char* sig, const char* sidId) {
         std::cout << ss.str().c_str() << std::endl;
 
         return 0;
+    }
+    else {
+        std::cout << "[" << sidId << ", " << std::hex << sigResult << "] Successfully created hook" << std::endl;
     }
 
     return sigResult;
