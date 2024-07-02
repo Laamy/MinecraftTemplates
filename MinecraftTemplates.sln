@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Dx11on12 Client Template", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Keymap Client Template", "Keymap Client Template\Keymap Client Template.vcxproj", "{6A0EEDA2-EC5F-45CC-820A-E39750988E31}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Console Template", "Console Template\Console Template.vcxproj", "{F1B0C6A5-3722-4185-A550-3DD7F8F37A60}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{6A0EEDA2-EC5F-45CC-820A-E39750988E31}.Release|x64.Build.0 = Release|x64
 		{6A0EEDA2-EC5F-45CC-820A-E39750988E31}.Release|x86.ActiveCfg = Release|Win32
 		{6A0EEDA2-EC5F-45CC-820A-E39750988E31}.Release|x86.Build.0 = Release|Win32
+		{F1B0C6A5-3722-4185-A550-3DD7F8F37A60}.Debug|x64.ActiveCfg = Debug|x64
+		{F1B0C6A5-3722-4185-A550-3DD7F8F37A60}.Debug|x64.Build.0 = Debug|x64
+		{F1B0C6A5-3722-4185-A550-3DD7F8F37A60}.Debug|x86.ActiveCfg = Debug|Win32
+		{F1B0C6A5-3722-4185-A550-3DD7F8F37A60}.Debug|x86.Build.0 = Debug|Win32
+		{F1B0C6A5-3722-4185-A550-3DD7F8F37A60}.Release|x64.ActiveCfg = Release|x64
+		{F1B0C6A5-3722-4185-A550-3DD7F8F37A60}.Release|x64.Build.0 = Release|x64
+		{F1B0C6A5-3722-4185-A550-3DD7F8F37A60}.Release|x86.ActiveCfg = Release|Win32
+		{F1B0C6A5-3722-4185-A550-3DD7F8F37A60}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
